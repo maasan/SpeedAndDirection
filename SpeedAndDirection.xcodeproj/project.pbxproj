@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1C23AD231B9FE400C1EC13 /* NTKModelSpeedAndDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1C23AC231B9FE400C1EC13 /* NTKModelSpeedAndDirection.swift */; };
 		9EF13A23219461CB005B1C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF13A22219461CB005B1C3C /* AppDelegate.swift */; };
 		9EF13A25219461CB005B1C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF13A24219461CB005B1C3C /* ViewController.swift */; };
 		9EF13A28219461CB005B1C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF13A26219461CB005B1C3C /* Main.storyboard */; };
 		9EF13A2A219461CD005B1C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF13A29219461CD005B1C3C /* Assets.xcassets */; };
 		9EF13A2D219461CD005B1C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF13A2B219461CD005B1C3C /* LaunchScreen.storyboard */; };
+		9EF13A3621946291005B1C3C /* NTKModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF13A3521946291005B1C3C /* NTKModelManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E1C23AC231B9FE400C1EC13 /* NTKModelSpeedAndDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTKModelSpeedAndDirection.swift; sourceTree = "<group>"; };
 		9EF13A1F219461CB005B1C3C /* SpeedAndDirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedAndDirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF13A22219461CB005B1C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF13A24219461CB005B1C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9EF13A29219461CD005B1C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EF13A2C219461CD005B1C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EF13A2E219461CD005B1C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF13A3521946291005B1C3C /* NTKModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTKModelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				9EF13A22219461CB005B1C3C /* AppDelegate.swift */,
-				9EF13A24219461CB005B1C3C /* ViewController.swift */,
-				9EF13A26219461CB005B1C3C /* Main.storyboard */,
-				9EF13A29219461CD005B1C3C /* Assets.xcassets */,
-				9EF13A2B219461CD005B1C3C /* LaunchScreen.storyboard */,
+				9EF13A342194625C005B1C3C /* Model */,
+				9EF13A372199CA5F005B1C3C /* Controller */,
+				9EF13A382199CA94005B1C3C /* Supporting Files */,
 				9EF13A2E219461CD005B1C3C /* Info.plist */,
 			);
 			path = SpeedAndDirection;
+			sourceTree = "<group>";
+		};
+		9EF13A342194625C005B1C3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EF13A3521946291005B1C3C /* NTKModelManager.swift */,
+				9E1C23AC231B9FE400C1EC13 /* NTKModelSpeedAndDirection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EF13A372199CA5F005B1C3C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EF13A26219461CB005B1C3C /* Main.storyboard */,
+				9EF13A24219461CB005B1C3C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EF13A382199CA94005B1C3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EF13A29219461CD005B1C3C /* Assets.xcassets */,
+				9EF13A2B219461CD005B1C3C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					9EF13A1E219461CB005B1C3C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -136,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF13A25219461CB005B1C3C /* ViewController.swift in Sources */,
+				9E1C23AD231B9FE400C1EC13 /* NTKModelSpeedAndDirection.swift in Sources */,
+				9EF13A3621946291005B1C3C /* NTKModelManager.swift in Sources */,
 				9EF13A23219461CB005B1C3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,8 +324,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.no-tenki.SpeedAndDirection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,8 +342,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.no-tenki.SpeedAndDirection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
